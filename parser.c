@@ -637,14 +637,14 @@ int main()
 	}else
 	{
 		//archivo_salida=fopen("archivo_salida","a");
-    get_token();
+    		get_token();
 		json();
 		if (error_encontrado == 0)
 		{
 			printf("No se encontraron errores");
 		}
-
+		fclose(archivo_fuente);
 	}
-	fclose(archivo_fuente);
+
 	return 0;
 }
